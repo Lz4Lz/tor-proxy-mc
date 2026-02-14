@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 1,
+  "id": "tor-proxy",
+  "version": "${version}",
+  "name": "tor-proxy",
+  "description": "Routes Minecraft traffic through a Tor proxy, allowing you to play with extra privacy and join .onion servers.",
+  "authors": ["L4z"],
+  "contact": {
+    "homepage": "https://github.com/Lz4Lz/TorOverMc",
+    "sources": "https://github.com/Lz4Lz/TorOverMc"
+  },
+  "license": "All-Rights-Reserved",
+  "icon": "assets/tor-proxy/tor.png",
+  "environment": "client",
+  "entrypoints": {
+    "fabric-datagen": [
+      "me.laz.torProxy.client.TorProxyDataGenerator"
+    ],
+    "modmenu": [
+      "me.laz.torProxy.client.config.ModMenuIntegration"
+    ],
+    "client": [
+      "me.laz.torProxy.client.TorProxyClient"
+    ],
+    "main": [
+      "me.laz.torProxy.TorProxy"
+    ]
+  },
+  "mixins": [
+    "tor-proxy.mixins.json",
+    {
+      "config": "tor-proxy.client.mixins.json",
+      "environment": "client"
+    }
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric-api": "*",
+    "cloth-config2": "*",
+    "modmenu": "*",
+    "minecraft": "${minecraft_version}"
+  },
+  "custom": {
+    "modmenu": {
+      "name": "Tor Proxy",
+      "description": "Routes Minecraft traffic through a Tor proxy for privacy and anonymity.",
+      "icon": "assets/tor-proxy/tor.png",
+      "links": {
+        "modmenu.github": "https://github.com/Lz4Lz/TorOverMc",
+        "modmenu.modrinth": "https://modrinth.com/mod/tor-proxy"
+      },
+      "update_checker": true
+    }
+  }
+}
