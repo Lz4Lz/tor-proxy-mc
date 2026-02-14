@@ -6,8 +6,8 @@
   "description": "Routes Minecraft traffic through a Tor proxy, allowing you to play with extra privacy and join .onion servers.",
   "authors": ["L4z"],
   "contact": {
-    "homepage": "https://github.com/Lz4Lz/TorOverMc",
-    "sources": "https://github.com/Lz4Lz/TorOverMc"
+    "homepage": "https://github.com/Lz4Lz/tor-proxy-mc",
+    "sources": "https://github.com/Lz4Lz/tor-proxy-mc"
   },
   "license": "All-Rights-Reserved",
   "icon": "assets/tor-proxy/tor.png",
@@ -46,7 +46,7 @@
       "description": "Routes Minecraft traffic through a Tor proxy for privacy and anonymity.",
       "icon": "assets/tor-proxy/tor.png",
       "links": {
-        "modmenu.github": "https://github.com/Lz4Lz/TorOverMc",
+        "modmenu.github": "https://github.com/Lz4Lz/tor-proxy-mc",
         "modmenu.modrinth": "https://modrinth.com/mod/tor-proxy"
       },
       "update_checker": true
